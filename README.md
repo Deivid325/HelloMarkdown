@@ -199,3 +199,14 @@ En la pantalla Requisitos web de Icinga, haga clic en el botón Siguiente.
 Seleccione la opción Base de datos y haga clic en el botón Siguiente.
 ![4](https://github.com/Deivid325/HelloMarkdown/blob/main/4.png?raw=true)
 
+En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
+
+• Nombre del recurso - icingaweb_db
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icingaweb_db
+• Nombre de usuario - icingaweb_db
+• Contraseña - Password123#@!
+
+Haga clic en el botón Siguiente.
