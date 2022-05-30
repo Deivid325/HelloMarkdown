@@ -120,3 +120,44 @@ service icinga2 restart
 Ha terminado la instalación de la base de datos.
 
 Ha importado las plantillas de base de datos Icinga2 en MySQL Server.
+
+### Tutorial - Instalación de la interfaz web Icinga2
+A continuación, necesitamos instalar el servidor web Apache y todo el software necesario.
+En la consola Linux, utilice los siguientes comandos para instalar los paquetes necesarios.
+```bash
+apt-get -y install apache2 php libapache2-mod-php php-cli php-opcache php-gd
+apt-get -y install php-mysql php-mbstring php-xml php-gd php-json php-curl
+apt-get -y install php-bcmath php-ldap php-intl php-readline 
+```
+Localice el archivo de configuración PHP en su sistema.
+
+Edite el archivo de configuración PHP y establezca la zona horaria correcta.
+
+```bash
+updatedb
+locate php.ini
+nano /etc/php/7.2/apache2/php.ini
+```
+Reinicie el servicio Apache.
+```bash
+service apache2 restart
+```
+Acceda al servidor de bases de datos MySQL.
+```bash
+mysql -u root -p
+```
+Cree una base de datos denominada icingaweb_db.
+```bash
+CREATE DATABASE icingaweb_db CHARACTER SET UTF8 COLLATE UTF8_BIN;
+```
+Cree un usuario mysql denominado icingaweb_db.
+```bash
+CREATE USER 'icingaweb_db'@'%' IDENTIFIED BY 'Password123#@!';
+```
+Conceda al usuario MySQL el nombre icingaweb_db permiso sobre la base de datos denominada icingaweb_db.
+
+```bash
+GRANT ALL PRIVILEGES ON icingaweb_db.* TO 'icingaweb_db'@'%';
+quit;
+```
+
