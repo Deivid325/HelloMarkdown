@@ -75,3 +75,41 @@ Establezca una contraseña para el usuario raíz de MySQL.
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password123#@!';
 ```
 En nuestro ejemplo, establecemos la contraseña raíz "Password123#@!".
+
+Cree una base de datos denominada icinga2.
+
+```bash
+CREATE DATABASE icinga2 CHARACTER SET UTF8 COLLATE UTF8_BIN;
+```
+Cree un usuario mysql denominado icinga2.
+```bash
+CREATE USER 'icinga2'@'%' IDENTIFIED BY 'Password123#@!';
+```
+Conceda al usuario de MySQL permiso denominado icinga2 sobre la base de datos denominada icinga2.
+```bash
+GRANT ALL PRIVILEGES ON icinga2.* TO 'icinga2'@'%';
+quit;
+```
+Importe la plantilla de base de datos Icinga2 dentro de MySQL.
+El sistema solicitará la contraseña del usuario de icinga2 MysQL para importar la plantilla.
+```bash
+mysql -u icinga2 -p icinga2 < /usr/share/icinga2-ido-mysql/schema/mysql.sql
+```
+Edite el archivo de configuración ido-mysql.conf para habilitar la comunicación con el servicio MySQL.
+```bash
+sudo nano /etc/icinga2/features-enabled/ido-mysql.conf
+```
+Aquí está nuestra configuración.
+```bash
+/**
+ * The db_ido_mysql library implements IDO functionality
+ * for MySQL.
+ */
+library "db_ido_mysql"
+object IdoMysqlConnection "ido-mysql" {
+  user = "icinga2",
+  password = "Password123#@!",
+  host = "localhost",
+  database = "icinga2"
+}
+```
