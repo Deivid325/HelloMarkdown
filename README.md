@@ -210,3 +210,11 @@ En la pantalla Recurso de base de datos de Icinga, realice la siguiente configur
 • Contraseña - Password123#@!
 
 Haga clic en el botón Siguiente.
+![5](https://github.com/Deivid325/HelloMarkdown/blob/main/5.png?raw=true)
+
+En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2.
+![6](https://github.com/Deivid325/HelloMarkdown/blob/main/6.png?raw=true)
+
+Establezca el nombre de back-end icingaweb2 y haga clic en el botón Siguiente.
+![7](https://github.com/Deivid325/HelloMarkdown/blob/main/7.png?raw=true)
+
