@@ -160,4 +160,42 @@ Conceda al usuario MySQL el nombre icingaweb_db permiso sobre la base de datos d
 GRANT ALL PRIVILEGES ON icingaweb_db.* TO 'icingaweb_db'@'%';
 quit;
 ```
+Instale el paquete de interfaz web de Icinga denominado icingaweb2.
+```bash
+apt-get install icingaweb2
+```
+Reinicie el servicio Apache.
+
+```bash
+service apache2 restart
+```
+Genere el token de instalación de Icinga.
+```bash
+icingacli setup token create
+The newly generated setup token is: 0921ddefede15e7f
+```
+En caso de luego no recordar o perder el token generado, podemos usar el siguiente comadno: 
+```bash
+icingacli setup token show
+```
+
+Abra su navegador e introduzca la dirección IP de su servidor web más /icingaweb2.
+
+En nuestro ejemplo, se introdujo la siguiente URL en el navegador:
+
+http://10.0.2.15/icingaweb2
+
+Se debe presentar la interfaz de instalación web de Icinga2.
+
+Ingrese el token de configuración de Icinga web2.
+![1](https://github.com/Deivid325/HelloMarkdown/blob/main/1.png?raw=true)
+
+En la pantalla Módulos web de Icinga, haga clic en el botón Siguiente.
+![2](https://github.com/Deivid325/HelloMarkdown/blob/main/2.png?raw=true)
+
+En la pantalla Requisitos web de Icinga, haga clic en el botón Siguiente.
+![3](https://github.com/Deivid325/HelloMarkdown/blob/main/3.png?raw=true)
+
+Seleccione la opción Base de datos y haga clic en el botón Siguiente.
+![4](https://github.com/Deivid325/HelloMarkdown/blob/main/4.png?raw=true)
 
