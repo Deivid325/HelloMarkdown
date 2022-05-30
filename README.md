@@ -113,3 +113,10 @@ object IdoMysqlConnection "ido-mysql" {
   database = "icinga2"
 }
 ```
+Reiniciar Icinga2
+```bash
+service icinga2 restart
+````
+Ha terminado la instalación de la base de datos.
+
+Ha importado las plantillas de base de datos Icinga2 en MySQL Server.
