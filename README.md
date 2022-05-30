@@ -43,7 +43,35 @@ Esto permitirá al servidor Icinga2 almacenar la configuración en Mysql.
 apt-get update
 apt-get install icinga2-ido-mysql
 ```
+
 Habilite la función ido-mysql del Icinga 2.
 ![ido-mysql](https://github.com/Deivid325/HelloMarkdown/blob/main/1.1.png?raw=true)
+
 Configurar la base de datos para icinga2-ido-mysql con dbconfig-common
 ![icinga2-ido-mysql](https://github.com/Deivid325/HelloMarkdown/blob/main/1.2.png?raw=true)
+
+Habilite la característica ido-mysql.
+```bash
+icinga2 feature enable command  ido-mysql
+```
+
+Reiniciar Icinga2
+```bash
+service icinga2 restart
+```
+Instale el servicio de base de datos MySQL.
+
+```bash
+apt-get install mysql-server mysql-client
+```
+Acceda al servidor de bases de datos MySQL.
+
+```bash
+mysql -u root -p
+```
+Establezca una contraseña para el usuario raíz de MySQL.
+
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password123#@!';
+```
+En nuestro ejemplo, establecemos la contraseña raíz "Password123#@!".
