@@ -44,4 +44,4 @@ apt-get update
 apt-get install icinga2-ido-mysql
 ```
 Habilite la función ido-mysql del Icinga 2.
-![ido-mysql] (https://github.com/Deivid325/HelloMarkdown/blob/main/1.1.png)
+![ido-mysql](https://github.com/Deivid325/HelloMarkdown/blob/main/1.1.png?raw=true)
