@@ -218,3 +218,38 @@ En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la p
 Establezca el nombre de back-end icingaweb2 y haga clic en el botón Siguiente.
 ![7](https://github.com/Deivid325/HelloMarkdown/blob/main/7.png?raw=true)
 
+Establezca una cuenta administrativa para acceder a la interfaz web de Icinga.
+![8](https://github.com/Deivid325/HelloMarkdown/blob/main/8.png?raw=true)
+
+Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
+
+• Mostrar Stacktraces - Habilitado
+• Mostrar mensajes de estado de la aplicación - Habilitado
+• Tipo de almacenamiento de preferencias de usuario - Base de datos
+• Tipo de registro - Syslog
+• Nivel de registro - Error
+• Prefijo de aplicación - icingaweb2
+• Facilidad - Usuario
+
+Haga clic en el botón Siguiente.
+![9](https://github.com/Deivid325/HelloMarkdown/blob/main/9.png?raw=true)
+
+En la pantalla de resumen de instalación de Icinga, haga clic en el botón Siguiente.
+![10](https://github.com/Deivid325/HelloMarkdown/blob/main/10.png?raw=true)
+
+En la pantalla de bienvenida, haga clic en el botón Siguiente.
+![11](https://github.com/Deivid325/HelloMarkdown/blob/main/11.png?raw=true)
+
+En la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
+• Nombre del recurso - icinga_ido
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icinga2
+• Nombre de usuario - icinga2
+• Contraseña - Password123#@!
+
+Haga clic en el botón Siguiente.
+![12](https://github.com/Deivid325/HelloMarkdown/blob/main/12.png?raw=true)
+
+
