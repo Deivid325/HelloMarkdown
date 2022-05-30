@@ -202,11 +202,17 @@ Seleccione la opción Base de datos y haga clic en el botón Siguiente.
 En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
 
 • Nombre del recurso - icingaweb_db
+
 • Tipo de base de datos - MYSQL
+
 • Anfitrión - localhost
+
 • Puerto - 3306
+
 • Nombre de la base de datos - icingaweb_db
+
 • Nombre de usuario - icingaweb_db
+
 • Contraseña - Password123#@!
 
 Haga clic en el botón Siguiente.
@@ -224,11 +230,17 @@ Establezca una cuenta administrativa para acceder a la interfaz web de Icinga.
 Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
 
 • Mostrar Stacktraces - Habilitado
+
 • Mostrar mensajes de estado de la aplicación - Habilitado
+
 • Tipo de almacenamiento de preferencias de usuario - Base de datos
+
 • Tipo de registro - Syslog
+
 • Nivel de registro - Error
+
 • Prefijo de aplicación - icingaweb2
+
 • Facilidad - Usuario
 
 Haga clic en el botón Siguiente.
@@ -242,11 +254,17 @@ En la pantalla de bienvenida, haga clic en el botón Siguiente.
 
 En la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
 • Nombre del recurso - icinga_ido
+
 • Tipo de base de datos - MYSQL
+
 • Anfitrión - localhost
+
 • Puerto - 3306
+
 • Nombre de la base de datos - icinga2
+
 • Nombre de usuario - icinga2
+
 • Contraseña - Password123#@!
 
 Haga clic en el botón Siguiente.
@@ -255,7 +273,9 @@ Haga clic en el botón Siguiente.
 En la pantalla Transporte de comandos, realice la siguiente configuración:
 
 • Nombre del transporte - icinga2
+
 • Tipo de transporte - Archivo de comandación local
+
 • Archivo De comunicación - /var/run/icinga2/cmd/icinga2.cmd
 
 Haga clic en el botón Siguiente.
