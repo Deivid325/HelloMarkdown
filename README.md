@@ -302,3 +302,4 @@ Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 Se debe mostrar la interfaz de inicio de sesión de Icinga2.
 ![17](https://github.com/Deivid325/HelloMarkdown/blob/main/17.png?raw=true)
 
+Felicitaciones, ha instalado la interfaz web Icinga2 en Ubuntu Linux.
