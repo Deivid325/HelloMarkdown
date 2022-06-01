@@ -393,10 +393,11 @@ object UserGroup "icingaadmins" {
 }
 ```
 
-Para recibir notificaciones de un servicio determinado pondremos la línea de comando siguiente dentro de /etc/icinga2/conf.d/hosts.conf y /etc/icinga2/conf.d/services.conf
+Para recibir notificaciones de un servicio determinado pondremos la línea de comando siguiente dentro de /etc/icinga2/conf.d/services.conf
 
 ```bash
 vars.notification["mail"] = {
  groups = [ "icingaadmins" ]
 }
 ```
+
