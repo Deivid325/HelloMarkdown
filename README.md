@@ -369,3 +369,34 @@ sudo apt-get install postfix mailutils
 ```
 
 Nos aparecerá la configuración:
+
+
+Finalizada la instalación, iremos al fichero /etc/icinga2/conf.d/users.conf
+El fichero deberá de quedar de la siguiente forma:
+```bash
+/**
+ * The example user 'icingaadmin' and the example
+ * group 'icingaadmins'.
+ */
+
+object User "icingaadmin" {
+  import "generic-user"
+
+  display_name = "Icinga 2 Admin"
+  groups = [ "icingaadmins" ]
+
+  email = "tractordelagartos@gmail.com"
+}
+
+object UserGroup "icingaadmins" {
+  display_name = "Icinga 2 Admin Group"
+}
+```
+
+Para recibir notificaciones de un servicio determinado pondremos la línea de comando siguiente dentro de /etc/icinga2/conf.d/hosts.conf y /etc/icinga2/conf.d/services.conf
+
+```bash
+vars.notification["mail"] = {
+ groups = [ "icingaadmins" ]
+}
+```
