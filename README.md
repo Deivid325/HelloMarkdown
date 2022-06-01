@@ -358,3 +358,9 @@ object Service "ssh" {
     check_command = "ssh"
 }
 ```
+
+Monitorización:
+
+
+
+### Mecanismo de notificación en caso de caída o fallo de algún sistema/recurso monitorizado.
