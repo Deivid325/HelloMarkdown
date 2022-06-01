@@ -304,3 +304,46 @@ Se debe mostrar la interfaz de inicio de sesión de Icinga2.
 ![17](https://github.com/Deivid325/HelloMarkdown/blob/main/17.png?raw=true)
 
 Felicitaciones, ha instalado la interfaz web Icinga2 en Ubuntu Linux.
+
+### Los recursos de hardware (carga de CPU, RAM en uso, espacio de disco duro disponible) de otra máquina virtual (Windows/Linux).
+Deberemos modificar el fichero /etc/icinga2/conf.d/hosts.conf y escribir esto dentro de él:
+´´´bash
+/*Para conectar con el cliente*/
+object Host "Cliente" {
+    import "generic-host"
+    address = "10.0.2.15"
+}
+/*Para monitorizar la CPU del cliente*/
+object Service "CPU" {
+  import "generic-service"
+  host_name = "Cliente"
+  check_command = "load"
+}
+/*Para monitorizar la RAM del cliente*/
+object Service "RAM" {
+  import "generic-service"
+  host_name = "Cliente"
+  check_command = "swap"
+}
+/*Para monitorizar el disco del cliente*/
+object Service "Disco" {
+  import "generic-service"
+  host_name = "Cliente"
+  check_command = "disk"
+}
+/*Para monitorizar la página web del instituto*/
+object Host "Instituto DPM" {
+    import "generic-host"
+    address = "81.88.48.71"
+}
+
+/*Otra forma de monitorizar una página web que actualmente no funciona*/
+object Host "Instituto DPM 2" {
+    address = "81.88.48.71"
+    import "generic-host"
+    vars.http_vhosts["iesdomingoperezminik.es"] = {
+        http_vhost = "iesdomingoperezminik.es"
+        http_ssl = true
+      }
+}
+```
