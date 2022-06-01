@@ -348,3 +348,13 @@ object Host "Instituto DPM 2" {
       }
 }
 ```
+Ahora editaremos el fichero /etc/icinga2/conf.d/services.conf
+Y escribimos lo siguiente:
+
+```bash
+object Service "ssh" {
+    import "generic-service"
+    host_name = "Cliente"
+    check_command = "ssh"
+}
+```
