@@ -360,6 +360,7 @@ object Service "ssh" {
 ```
 
 Monitorización:
+![18](https://github.com/Deivid325/HelloMarkdown/blob/main/18.png?raw=true)
 
 ### Mecanismo notificador en caso de caída o fallo de algún sistema/recurso monitorizado.
 Debemos instalar postfix mailutils mediante el comando:
@@ -369,7 +370,9 @@ sudo apt-get install postfix mailutils
 ```
 
 Nos aparecerá la configuración:
-
+![19](https://github.com/Deivid325/HelloMarkdown/blob/main/19.png?raw=true)
+.
+![20](https://github.com/Deivid325/HelloMarkdown/blob/main/20.png?raw=true)
 
 Finalizada la instalación, iremos al fichero /etc/icinga2/conf.d/users.conf
 El fichero deberá de quedar de la siguiente forma:
