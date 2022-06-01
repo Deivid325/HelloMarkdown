@@ -361,6 +361,11 @@ object Service "ssh" {
 
 Monitorización:
 
+### Mecanismo notificador en caso de caída o fallo de algún sistema/recurso monitorizado.
+Debemos instalar postfix mailutils mediante el comando:
 
+```bash
+sudo apt-get install postfix mailutils
+```
 
-### Mecanismo de notificación en caso de caída o fallo de algún sistema/recurso monitorizado.
+Nos aparecerá la configuración:
