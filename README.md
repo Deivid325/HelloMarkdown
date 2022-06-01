@@ -369,9 +369,9 @@ Debemos instalar postfix mailutils mediante el comando:
 sudo apt-get install postfix mailutils
 ```
 
-Nos aparecerá la configuración:
+Nos aparecerá la configuración y seleccionamos "Sitio de Internet"
 ![19](https://github.com/Deivid325/HelloMarkdown/blob/main/19.png?raw=true)
-.
+Y aquí ponemos el correo electrónico.
 ![20](https://github.com/Deivid325/HelloMarkdown/blob/main/20.png?raw=true)
 
 Finalizada la instalación, iremos al fichero /etc/icinga2/conf.d/users.conf
@@ -403,4 +403,7 @@ vars.notification["mail"] = {
  groups = [ "icingaadmins" ]
 }
 ```
+
+Y como podemos comprobar al apagar el cliente recibimos un correo de advertencia.
+![21](https://github.com/Deivid325/HelloMarkdown/blob/main/21.png?raw=true)
 
