@@ -307,7 +307,8 @@ Felicitaciones, ha instalado la interfaz web Icinga2 en Ubuntu Linux.
 
 ### Los recursos de hardware (carga de CPU, RAM en uso, espacio de disco duro disponible) de otra máquina virtual (Windows/Linux).
 Deberemos modificar el fichero /etc/icinga2/conf.d/hosts.conf y escribir esto dentro de él:
-´´´bash
+
+```bash
 /*Para conectar con el cliente*/
 object Host "Cliente" {
     import "generic-host"
