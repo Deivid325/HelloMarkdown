@@ -404,6 +404,6 @@ vars.notification["mail"] = {
 }
 ```
 
-Y como podemos comprobar al apagar el cliente recibimos un correo de advertencia.
+Y como podemos comprobar al apagar el equipo recibimos un correo de advertencia.
 ![21](https://github.com/Deivid325/HelloMarkdown/blob/main/21.png?raw=true)
 
