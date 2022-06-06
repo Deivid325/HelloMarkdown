@@ -46,7 +46,7 @@ apt-get install icinga2-ido-mysql
 
 Habilite la función ido-mysql del Icinga 2.
 
-![ido-mysql]([https://github.com/Deivid325/HelloMarkdown/blob/main/1.1.png?raw=true](https://github.com/Deivid325/HelloMarkdown/blob/main/images/1.1.png?raw=true))
+![ido-mysql](https://github.com/Deivid325/HelloMarkdown/blob/main/images/1.1.png?raw=true)
 
 Configurar la base de datos para icinga2-ido-mysql con dbconfig-common
 ![icinga2-ido-mysql](https://github.com/Deivid325/HelloMarkdown/blob/main/images/1.2.png?raw=true)
@@ -269,7 +269,7 @@ En la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realic
 • Contraseña - Password123#@!
 
 Haga clic en el botón Siguiente.
-![12](https://github.com/Deivid325/HelloMarkdown/blob/main/12.png?raw=true)
+![12](https://github.com/Deivid325/HelloMarkdown/blob/main/images/12.png?raw=true)
 
 En la pantalla Transporte de comandos, realice la siguiente configuración:
 
@@ -280,14 +280,14 @@ En la pantalla Transporte de comandos, realice la siguiente configuración:
 • Archivo De comunicación - /var/run/icinga2/cmd/icinga2.cmd
 
 Haga clic en el botón Siguiente.
-![13](https://github.com/Deivid325/HelloMarkdown/blob/main/13.png?raw=true)
+![13](https://github.com/Deivid325/HelloMarkdown/blob/main/images/13.png?raw=true)
 
 En la pantalla Seguridad de supervisión, realice la siguiente configuración:
 
 • Variables personalizadas protegidas - *pw*,*pass*,community
 
 Haga clic en el botón Siguiente.
-![14](https://github.com/Deivid325/HelloMarkdown/blob/main/14.png?raw=true)
+![14](https://github.com/Deivid325/HelloMarkdown/blob/main/images/14.png?raw=true)
 
 En la última pantalla, haga clic en el botón Finalizar y espere a que finalice la instalación de Icinga2.
 ![15](https://github.com/Deivid325/HelloMarkdown/blob/main/15.png?raw=true)
