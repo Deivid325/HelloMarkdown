@@ -290,10 +290,10 @@ Haga clic en el botón Siguiente.
 ![14](https://github.com/Deivid325/HelloMarkdown/blob/main/images/14.png?raw=true)
 
 En la última pantalla, haga clic en el botón Finalizar y espere a que finalice la instalación de Icinga2.
-![15](https://github.com/Deivid325/HelloMarkdown/blob/main/15.png?raw=true)
+![15](https://github.com/Deivid325/HelloMarkdown/blob/main/images/15.png?raw=true)
 
 Después de finalizar la instalación haga clic en la opción: Iniciar sesión en Icinga Web 2.
-![16](https://github.com/Deivid325/HelloMarkdown/blob/main/16.png?raw=true)
+![16](https://github.com/Deivid325/HelloMarkdown/blob/main/images/16.png?raw=true)
 
 Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 
@@ -301,7 +301,7 @@ Por último, se le presentará la pantalla de inicio de sesión de Icinga2.
 • Contraseña predeterminada de Icinga2: Password123#@!
 
 Se debe mostrar la interfaz de inicio de sesión de Icinga2.
-![17](https://github.com/Deivid325/HelloMarkdown/blob/main/17.png?raw=true)
+![17](https://github.com/Deivid325/HelloMarkdown/blob/main/images/17.png?raw=true)
 
 Felicitaciones, ha instalado la interfaz web Icinga2 en Ubuntu Linux.
 
@@ -360,7 +360,7 @@ object Service "ssh" {
 ```
 
 Monitorización:
-![18](https://github.com/Deivid325/HelloMarkdown/blob/main/18.png?raw=true)
+![18](https://github.com/Deivid325/HelloMarkdown/blob/main/images/18.png?raw=true)
 
 ### Mecanismo notificador en caso de caída o fallo de algún sistema/recurso monitorizado.
 Debemos instalar postfix mailutils mediante el comando:
@@ -370,9 +370,9 @@ sudo apt-get install postfix mailutils
 ```
 
 Nos aparecerá la configuración y seleccionamos "Sitio de Internet"
-![19](https://github.com/Deivid325/HelloMarkdown/blob/main/19.png?raw=true)
+![19](https://github.com/Deivid325/HelloMarkdown/blob/main/images/19.png?raw=true)
 Y aquí ponemos el correo electrónico.
-![20](https://github.com/Deivid325/HelloMarkdown/blob/main/20.png?raw=true)
+![20](https://github.com/Deivid325/HelloMarkdown/blob/main/images/20.png?raw=true)
 
 Finalizada la instalación, iremos al fichero /etc/icinga2/conf.d/users.conf
 El fichero deberá de quedar de la siguiente forma:
@@ -405,5 +405,5 @@ vars.notification["mail"] = {
 ```
 
 Y como podemos comprobar al apagar el equipo recibimos un correo de advertencia.
-![21](https://github.com/Deivid325/HelloMarkdown/blob/main/21.png?raw=true)
+![21](https://github.com/Deivid325/HelloMarkdown/blob/main/images/21.png?raw=true)
 
